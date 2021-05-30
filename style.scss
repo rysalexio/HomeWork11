@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.menu{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    }
+.group_1{
+    max-width: 111px;
+    display: flex;
+    justify-content: space-between;
+}
+.group_2{
+    max-width: 168px;
+    display: flex;
+    justify-content: space-between;
+}
