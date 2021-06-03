@@ -14,7 +14,7 @@
 }
 
 .group_1 {
-  max-width: 111px;
+  width: 111px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +24,7 @@
 }
 
 .group_2 {
-  max-width: 168px;
+  width: 168px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
