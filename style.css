@@ -10,45 +10,30 @@
 
 .menu {
   width: 100%;
-  margin-top: 10px;
-  min-height: 75px;
-  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: 75px;
+  background-color: black;
 }
 
-.menu_logo {
-  width: 100%;
+.menu .menu_logo {
   max-width: 111px;
   padding-left: 231px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.menu_main {
-  width: 100%;
+.menu .menu_main {
   max-width: 168px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-right: 231px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .main_top {
@@ -66,107 +51,42 @@
   padding-left: 63px;
 }
 
-.top_content {
-  width: 100%;
-  margin: 65px auto 0 auto;
+.categories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
   max-width: 1140px;
+  margin: 65px auto 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.women {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.categories .categories_item {
+  margin: 0 0 0 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 360px;
   min-height: 260px;
-  margin: 0 30px 0 0;
   background-size: cover;
   background-position: center;
+}
+
+.categories .categories_item .women {
   background-image: url(image/women.jpg);
 }
 
-.title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19,2px;
-  text-align: center;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  display: block;
-  width: 100%;
-}
-
-.subtitle {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28,8px;
-  text-align: center;
-  color: #F16D7F;
-  text-transform: uppercase;
-  display: block;
-  width: 100%;
-}
-
-.men {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 360px;
-  min-height: 260px;
-  background-size: cover;
-  background-position: center;
+.categories .categories_item .men {
   background-image: url(image/men.jpg);
 }
 
-.kids {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 360px;
-  min-height: 260px;
-  margin: 0 0 0 30px;
-  background-size: cover;
-  background-position: center;
+.categories .categories_item .kids {
   background-image: url(image/kids.jpg);
 }
 
@@ -192,10 +112,34 @@
   background-image: url(image/accesories.jpg);
 }
 
-.main_content {
+.txt {
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #F16D7F;
+}
+
+.products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1140px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -204,10 +148,6 @@
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  max-width: 1140px;
   margin: 96px auto;
 }
 
@@ -280,6 +220,62 @@
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.products_item:hover .products_item_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products_item:hover .products_item_btn:hover {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.products_item:hover .products_item_btn:hover svg {
+  fill: #000;
+}
+
+.products_item:hover .products_item_btn:active {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.products_item:hover .products_item_btn:active svg {
+  fill: #fff;
+}
+
+.products_item_btn svg {
+  fill: #fff;
+  margin: 0 11px 0 0;
+}
+
+.products_item:hover .products_item_photo {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.products_item_btn {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 38.3%;
+  min-height: 43px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 188px;
+  left: 32.7%;
 }
 
 .products_btn {
@@ -419,15 +415,15 @@
   width: 96px;
   height: 96px;
   margin: 0 0 30px 0;
-  background-image: url("https://i.postimg.cc/Y28TgSb7/d22362bea3cdf98de9818d4394ba8ed3-1.png");
-  background-size: 150%;
-  background-position: center -10px;
+  background-image: url(image/face.png);
+  background-size: 100%;
+  background-position: center;
   border-radius: 50%;
   background-repeat: no-repeat;
 }
 
 .subscribe_info_title {
-  font-style: italic;
+  font-style: mixed normal italic;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -572,5 +568,13 @@
   width: 32px;
   height: 32px;
   background-color: #fff;
+}
+
+.end_socials_item:hover {
+  background-color: #5D5D5D;
+}
+
+.end_socials_item:active {
+  background-color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
