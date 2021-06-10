@@ -25,10 +25,13 @@
     }
 //чёрное с ссылками
 .main_top{
-    background: #F1E4E6;
-    display: flex;
-    justify-content: flex-start;
+  background: #F1E4E6;
+  display: flex;
+  justify-content: flex-start;
 }
+
+@import url(catalog.css);
+@import url(product.css);
 .brand{
     padding-top: 290px;
     padding-left: 63px;
@@ -38,7 +41,7 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 1140px;
-    margin: 65px auto 0 auto;
+    margin: 65px auto 96px auto;
     justify-content: space-between;
     .categories_item{
       margin: 0 0 0 0;
@@ -97,7 +100,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 96px auto;
+  margin: 0 auto;
 }
 .products_title{
   display: block;

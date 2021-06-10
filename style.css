@@ -1,3 +1,5 @@
+@import url(catalog.css);
+@import url(product.css);
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +61,7 @@
       flex-wrap: wrap;
   width: 100%;
   max-width: 1140px;
-  margin: 65px auto 0 auto;
+  margin: 65px auto 96px auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -148,7 +150,7 @@
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 96px auto;
+  margin: 0 auto;
 }
 
 .products_title {
