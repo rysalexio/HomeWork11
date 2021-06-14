@@ -1,3 +1,4 @@
+@import url(animation.css);
 @import url(catalog.css);
 @import url(product.css);
 * {
@@ -38,6 +39,145 @@
   padding-right: 231px;
 }
 
+.mm_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.mm_span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  position: relative;
+}
+
+.mm_span:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.mm_span:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.mm_form:hover .mm_span,
+.mm_form:hover .mm_span::before,
+.mm_form:hover .mm_span::after {
+  background-color: red;
+}
+
+#main_menu {
+  visibility: hidden;
+  width: 232px;
+  height: 764px;
+  background-color: solid white;
+  position: absolute;
+  top: 75px;
+  margin-left: 166px;
+}
+
+#main_menu:checked ~ .menu_content {
+  visibility: visible;
+}
+
+.menu_content {
+  visibility: hidden;
+  width: 232px;
+  height: 764px;
+  background-color: solid white;
+  position: absolute;
+  top: 75px;
+  margin-left: 166px;
+}
+
+.mc_main_btn {
+  margin: 37px 0 4px 33px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #ffffff;
+}
+
+.mc_main_btn:hover {
+  color: #F16D7F;
+}
+
+.mc_main_btn:active {
+  color: #ffffff;
+}
+
+.mc_btn {
+  border: none;
+  background-color: #F1E4E6;
+  color: #F16D7F;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin: 20px 0 0 33px;
+}
+
+.mc_btn:hover {
+  color: #636363;
+}
+
+.mc_btn:active {
+  color: white;
+}
+
+.mc_list {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.mc_list_btn {
+  margin: 11px 0 0 54.5px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  border: none;
+  background-color: #F1E4E6;
+}
+
+.mc_list_btn:hover {
+  color: #F16D7F;
+}
+
+.mc_list_btn:active {
+  color: white;
+}
+
 .main_top {
   background: #F1E4E6;
   display: -webkit-box;
@@ -49,8 +189,11 @@
 }
 
 .brand {
+  max-width: 405px;
   padding-top: 290px;
   padding-left: 63px;
+  -webkit-animation: anim 1 2s;
+          animation: anim 1 2s;
 }
 
 .categories {

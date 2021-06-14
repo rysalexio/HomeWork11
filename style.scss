@@ -23,18 +23,138 @@
       padding-right: 231px;
   }
     }
+.mm_form {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid black;  
+}
+.mm_span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  position: relative;
+}
+.mm_span:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.mm_span:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.mm_form:hover .mm_span,
+.mm_form:hover .mm_span::before,
+.mm_form:hover .mm_span::after {
+  background-color: red;
+}
+#main_menu {
+  visibility: hidden;
+  width: 232px;
+  height: 764px;
+  background-color: solid rgb(255, 255, 255);
+  position: absolute;
+  top: 75px;
+  margin-left: 166px;
+}
+#main_menu:checked ~ .menu_content {
+  visibility: visible;
+}
+.menu_content{
+  visibility: hidden;
+  width: 232px;
+  height: 764px;
+  background-color: solid rgb(255, 255, 255);
+  position: absolute;
+  top: 75px;
+  margin-left: 166px;
+}
+.mc_main_btn{
+  margin: 37px 0 4px 33px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  align-items: center;
+  border: none;
+  background-color: #ffffff;
+  &:hover{
+      color: #F16D7F;
+  }
+  &:active{
+      color: #ffffff;
+  }
+}
+.mc_btn{
+  border: none;
+  background-color: #F1E4E6;
+  color: #F16D7F;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin: 20px 0 0 33px;
+  &:hover{
+    color: #636363;
+}
+&:active{
+    color: white;
+}
+}
+.mc_list{
+  list-style: none;
+  margin-top: 12px;
+}
+.mc_list_btn{
+  margin: 11px 0 0 54.5px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  border: none;
+  background-color: #F1E4E6;
+  &:hover{
+      color: #F16D7F;
+  }
+  &:active{
+      color: white;
+  }
+}
 //чёрное с ссылками
 .main_top{
   background: #F1E4E6;
   display: flex;
   justify-content: flex-start;
 }
-
+@import url(animation.css);
 @import url(catalog.css);
 @import url(product.css);
 .brand{
-    padding-top: 290px;
-    padding-left: 63px;
+  max-width: 405px;
+  padding-top: 290px;
+  padding-left: 63px;
+  animation: anim 1 2s;
 }//картинка с девизом
 .categories{
     display: flex;
