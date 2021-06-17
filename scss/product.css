@@ -1,0 +1,108 @@
+.product_card {
+  width: 100%;
+  min-height: 777px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pc_btn {
+  font-size: 40px;
+  min-width: 47px;
+  min-height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  border: none;
+  color: black;
+}
+
+.pc_btn:hover {
+  color: #F16D7F;
+}
+
+.pc_btn:active {
+  color: white;
+  background-color: #F16D7F;
+}
+
+.main_content {
+  margin-bottom: 78px;
+}
+
+.benefits {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 128px;
+}
+
+.ben_title {
+  text-align: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.ben_subtitle {
+  text-align: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.ben_txt {
+  text-align: center;
+  max-width: 555px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  margin-bottom: 32px;
+}
+
+.ben_price {
+  text-align: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  text-transform: uppercase;
+  margin-bottom: 130px;
+}
+
+.ben_sort {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 384px 48px 384px;
+}
+/*# sourceMappingURL=product.css.map */

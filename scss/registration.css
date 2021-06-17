@@ -1,0 +1,60 @@
+.main_registration {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  margin: 64px 0 96px 0;
+}
+
+.reg_form {
+  width: 100%;
+  max-width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rf_btn {
+  width: 100%;
+  max-width: 167px;
+  min-height: 50px;
+  border: 1px solid #f16d7f;
+  background: #f16d7f;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.rf_btn:hover {
+  background: white;
+  color: #f16d7f;
+}
+
+.rf_btn:active {
+  background: white;
+  color: black;
+}
+
+.loyalty {
+  width: 100%;
+  max-width: 652px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.rf_list {
+  list-style: inside url(../image/V.png);
+}
+/*# sourceMappingURL=registration.css.map */
