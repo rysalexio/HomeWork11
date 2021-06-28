@@ -1,0 +1,64 @@
+.main_registration{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 64px 0 96px 0;
+}
+.reg_form{
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.radio{
+    margin: 31px 0 33px 0;
+}
+.reg_txt{
+    margin: 15px 0 39px 0;
+}
+.rf_btn{
+    width: 100%;
+    max-width: 167px;
+    min-height: 50px;
+    border: 1px solid #f16d7f;
+    background: #f16d7f;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    &:hover{
+        background: white;
+        color: #f16d7f;
+    }
+    &:active{
+        background: white;
+        color: black;
+    }
+}
+.loyalty{
+    width: 100%;
+    max-width: 652px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.rf_list{
+    list-style: inside url(../image/V.png);
+}
+@media (max-width: 768px){
+    .loyalty{   
+         max-width: 354px;
+        font-size: 16px;}
+}
+@media (max-width:375px){
+    .main_registration{
+        flex-direction: column;
+        align-items: center;
+    }
+    .reg_form{
+        margin: 0 0 40px 0;
+    }
+}

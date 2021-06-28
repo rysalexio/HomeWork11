@@ -1,0 +1,210 @@
+
+.heading_title{
+    width: 100%;
+    min-height: 148px;
+    background: #F1E4E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.htt{
+    margin: 0 0 0 230px;
+}
+.heading_title_txt{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    border: none;
+    background-color: #F1E4E6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover{
+        color: #F16D7F;
+        text-shadow: none;
+    }
+    &:active{
+        color: white;
+        text-shadow: none;
+    }
+}
+.htb{
+    margin: 0 230px 0 0;
+}
+.heading_title_btn{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-transform: uppercase;
+    border: none;
+    background-color: #F1E4E6;
+    &:hover{
+        color: #F16D7F;
+    }
+    &:active{
+        color: white;
+    }
+}
+.products_filter{
+    width: 100%;
+    display: flex;
+    min-height: 132px;
+}
+.products_filter_all{
+    margin: 0 304px 0 16px;
+    width: 100%;
+    max-width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.products_filter_categories{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    align-items: center;
+    border: none;
+    background-color: #ffffff;
+    &:hover{
+        color: #F16D7F;
+    }
+    &:active{
+        color: #ffffff;
+    }
+}
+.sort{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.products_filter_item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-transform: uppercase;
+    align-items: center;
+    border: none;
+    background-color: #ffffff;
+    &:hover{
+        color: #F16D7F;
+    }
+    &:active{
+        color: #ffffff;
+    }
+}
+.products_item_cat{   
+    display: block;
+    width: 360px;
+    margin: 0 30px 30px 0;
+    position: relative;
+    background: #F8F8F8;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.products_item_cat:nth-child(3n+1) {
+  margin: 0 0 30px 0;
+}
+.products_item_cat:hover .products_item_btn {
+    display: flex;
+  }
+  .products_item_cat:hover .products_item_btn:hover {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #000;
+  }
+  .products_item_cat:hover .products_item_btn:hover svg {
+    fill: #000;
+  }
+  .products_item_cat:hover .products_item_btn:active {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  .products_item_cat:hover .products_item_btn:active svg {
+    fill: #fff;
+  }
+  .products_item_cat:hover .products_item_photo {
+    filter: brightness(50%);
+  } 
+.products_list{
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 300px;
+    list-style: none;
+    min-height: 44px;
+    align-items: center;
+}
+.products_list_number{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    border: none;
+    background-color: #ffffff;
+    &:hover{
+        color: #EF5B70;
+    }
+    &:active{
+        color: white;
+        background-color: #EF5B70;
+    }
+}
+.products_list_nav{
+    font-size: 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    &:hover{
+        color: #EF5B70;
+    }
+    &:active{
+        color: #C4C4C4;
+    }  
+}
+@media (max-width: 768px){
+    .htt{
+        margin: 0 0 0 16px;
+    }
+    .htb{
+        margin: 0 16px 0 0;
+    }
+    .products_filter_all{
+    margin: 0px 370px 0 16px;;
+    }
+    .products_item_cat:nth-child(4) {
+        display:none;
+      }
+      .products_item_cat:nth-child(n+1) {
+      margin: 0px 0px 30px 0px;
+      }
+    .products_list{
+        margin: 10px 0 64px;
+    }
+}
+@media (max-width: 375px){
+    .heading_title{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .htt{
+        margin: 0 0 0 0;
+    }
+    .htb{
+        margin: 0 0 0 0;
+    }
+    .products_filter_all{
+        margin: 0;
+    }
+}
