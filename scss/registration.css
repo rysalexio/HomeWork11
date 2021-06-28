@@ -22,6 +22,14 @@
           flex-direction: column;
 }
 
+.radio {
+  margin: 31px 0 33px 0;
+}
+
+.reg_txt {
+  margin: 15px 0 39px 0;
+}
+
 .rf_btn {
   width: 100%;
   max-width: 167px;
@@ -56,5 +64,27 @@
 
 .rf_list {
   list-style: inside url(../image/V.png);
+}
+
+@media (max-width: 768px) {
+  .loyalty {
+    max-width: 354px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main_registration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reg_form {
+    margin: 0 0 40px 0;
+  }
 }
 /*# sourceMappingURL=registration.css.map */

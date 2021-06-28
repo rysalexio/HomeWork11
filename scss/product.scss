@@ -80,3 +80,19 @@
     justify-content: space-between;
     margin: 0 384px 48px 384px;
 }
+@media (max-width: 768px){
+    .ben_sort {
+        margin: 0 197px 34px;
+    }
+}
+@media (max-width: 375px){
+    .product_card{
+        min-height: 624px;
+    }    
+    .product_card_photo{
+        max-width: 281px;
+    }
+    .ben_sort{
+        margin: 0 5px 64px;
+    }
+}
